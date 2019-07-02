@@ -51,8 +51,9 @@ const ultraboy  = new Hero("ultraboy", [Powers.X_RAY_VISION, Powers.SUPER_STRENG
 //2. ======================================================
 
 
-function filter(heroes: Hero[], superPower: string) {
+function filter(heroes: Hero[], superPower: Powers) {
     
 }
 
-// const canFly = filter(heroes, "flight") // -> [{ name: "superman", powers: [...] },{ name: "storm", powers: [...]}]
+//const canFly = filter([batman, superman, aquaman], Powers.FLIGHT) // -> [ Hero { name: 'superman', powers: [ 1, 2, 8, 6, 11 ] } ]
+//console.log(canFly)

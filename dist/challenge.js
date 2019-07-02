@@ -37,6 +37,8 @@ const ultraboy = new Hero("ultraboy", [Powers.X_RAY_VISION, Powers.SUPER_STRENGT
 //1. ======================================================
 //2. ======================================================
 function filter(heroes, superPower) {
+    return heroes.filter(el => el.powers.includes(superPower));
 }
-// const canFly = filter(heroes, "flight") // -> [{ name: "superman", powers: [...] },{ name: "storm", powers: [...]}]
+const canFly = filter([batman, superman, aquaman], Powers.FLIGHT); // -> [ { name: "superman", powers: [...] }, { name: "storm", powers: [...] }, { name: "ironman", powers: [...] } ]
+console.log(canFly);
 //# sourceMappingURL=challenge.js.map
